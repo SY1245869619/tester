@@ -6,7 +6,7 @@
 @file: readExcel.py
 @time: 2021/6/29 10:51
 """
-# 读取Excel的方法
+# @@@@@@@@@@@@@@@@@@@@@@@@@@读取Excel的方法@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 import os
 # 需要安装包xlrd,因为2.0不支持xlsx格式，因此需要导入1.2.0的xlrd版本
 from xlrd import open_workbook

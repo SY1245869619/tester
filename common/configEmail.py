@@ -6,7 +6,7 @@
 @file: configEmail.py
 @time: 2021/6/28 14:20
 """
-#配置发送邮件的主题、正文等，将测试报告发送并抄送到相关人邮箱的逻辑
+# @@@@@@@@@@@@@@@@@@@@@@配置发送邮件的主题、正文等，将测试报告发送并抄送到相关人邮箱的逻辑@@@@@@@@@@@@@@@@@@@@@@
 
 import os
 import smtplib
@@ -74,7 +74,7 @@ if __name__ == '__main__':
         recv=['sy17713146220@dingtalk.com'],  # 填入收件人
         title='自动化测试报告',
         content='测试发送邮件',
-        file=r'C:\Users\ShenYuan\Desktop\证件图片\煎饼果子\534d22ef2f234710d0baefccad20bfa.png',
+        file=r'C:\Resources\InterFaceTest\result\report.html',
         ssl=False,
     )
     m.send_email()

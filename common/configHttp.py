@@ -6,7 +6,7 @@
 @file: configHttp.py
 @time: 2021/6/28 14:20
 """
-# 通过get、post、put、delete等方法进行http请求，拿到请求的响应
+# @@@@@@@@@@@@@@@@@@@@@@@@@@通过get、post、put、delete等方法进行http请求，拿到请求的响应@@@@@@@@@@@@@@@@@@@@
 import json
 import urllib
 

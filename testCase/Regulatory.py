@@ -6,7 +6,7 @@
 @file: AndroidDriver.py
 @time: 2021/8/14 17:27
 """
-
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@和顺监管平台的测试用例编写，已完成@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 import json
 import getUrlParams
 import unittest
@@ -16,6 +16,7 @@ from common.configHttp import RunMain
 
 url = getUrlParams.GetUrlParams().get_url_Regulatory()  # 调用我们的getURlParams获取拼接的url
 read_xls = readExcel.ReadExcel().get_xls('Regulatory.xlsx', 'Page01')
+print(read_xls)
 RegulatoryHeaders = {
     "Host": "test.regulatory.kachexiongdi.com",
     "Connection": "keep-alive",

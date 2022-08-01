@@ -6,7 +6,7 @@
 @file: getUrlParams.py
 @time: 2021/6/28 14:25
 """
-# 获取接口的URL、参数、和method等
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@获取接口的URL、参数、和method等@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 import readConfig as readConfig
 
 readConfig = readConfig.ReadConfig()

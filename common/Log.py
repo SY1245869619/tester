@@ -6,7 +6,7 @@
 @file: Log.py
 @time: 2021/6/28 14:21
 """
-# 调用该类的方法，打印生成日志
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@调用该类的方法，打印生成日志@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 import os
 import logging
 from logging.handlers import TimedRotatingFileHandler

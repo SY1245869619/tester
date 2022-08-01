@@ -6,8 +6,10 @@
 @file: runAll.py
 @time: 2021/6/28 14:26
 """
-# 开始执行接口自动化，项目工程 部署完毕后直接运行该文件即可
+# @@@@@@@@@@@@@@@@@@@@@@@@@@开始执行接口自动化，项目工程部署完毕后直接运行该文件即可@@@@@@@@@@@@@@@@@@@@@@@@@@@
 import os
+import sys
+
 import readConfig
 import unittest
 import getPathInfo
@@ -16,7 +18,11 @@ from common.configEmail import SendEmail
 import common.Log
 
 log = common.Log.logger
-
+curPath = os.path.abspath(os.path.dirname(__file__))
+# print(curPath)
+rootPath = os.path.split(curPath)[0]
+# print(rootPath)
+sys.path.append(rootPath)
 send_mail = SendEmail(
     username='1245869619@qq.com',
     password='azugqhtyhalgifih',  # 这个填入的是授权码，不是密码！！！！
@@ -24,7 +30,7 @@ send_mail = SendEmail(
     # , '1438044262@qq.com'
     title='方向科技-自动化测试报告',
     content='本次测试需求包含\n”监管平台需求“\n*****请使用浏览器下载打开附件*****',
-    file=r'D:\TestProject\result\report.html',
+    file=os.path.join(r'{}\result'.format(curPath), 'report.html'),
     ssl=False,
 )
 path = getPathInfo.get_path()
@@ -40,7 +46,9 @@ class AllTest:  # 定义一个类AllTest
         global resultPath
         resultPath = os.path.join(report_path, "report.html")
         self.caseListFile = os.path.join(path, "caseList.txt")  # 配置执行哪些测试文件的配置文件路径
+        print(self.caseListFile)
         self.caseFile = os.path.join(path, "testCase")  # 真正的测试断言文件路径
+        print(self.caseFile)
         self.caseList = []
         # log.info('resultPath', resultPath)
         # log.info('caseListFile', self.caseListFile)
